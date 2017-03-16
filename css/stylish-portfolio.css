@@ -20,7 +20,7 @@ body {
 }
 
 body {
-    font-family: "Source Sans Pro","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-family: "Montserrat",Helvetica,Arial,sans-serif;
 }
 
 .text-vertical-center {
@@ -163,18 +163,31 @@ hr.small {
     width: 100%;
     height: 100%;
     background:white;
-    /*background: url(../img/magacap.jpg) no-repeat center center scroll;
+    background: url(../img/barcelona-beach.jpg) no-repeat center center scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
-    -o-background-size: cover;*/
+    -o-background-size: cover;
 }
+
+.header h1 {color:white}
+
+.header .white-box {
+    background:white;
+    max-width:400px;
+    margin:50px 0 0 50px;
+    padding:30px;
+    min-height:70%;
+}
+
+.white-box h1 {color:black;margin-bottom:20px;}
+.white-box p {color:black;}
 
 div.main-img {
     display:inline-block;
     background:white;
     width:90%;
-    max-width:700px;
+    max-width:600px;
     height:auto;
 }
 
@@ -305,7 +318,6 @@ footer {
     position:relative
 }
 .demo-2 p {
-    font-family:'Lato';
     font-size:12px;
     line-height:18px;
     margin:0
@@ -314,7 +326,6 @@ footer {
     font-size:20px;
     line-height:24px;
     margin:0;
-    font-family:'Lato'
 }
 .effect img {
     position:absolute;
@@ -322,6 +333,7 @@ footer {
     bottom:0;
     cursor:pointer;
     margin:-12px 0;
+    width:100%;
     -webkit-transition:bottom .3s ease-in-out;
     -moz-transition:bottom .3s ease-in-out;
     -o-transition:bottom .3s ease-in-out;
