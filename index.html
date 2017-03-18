@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Stylish Portfolio - Start Bootstrap Theme</title>
+    <title>AMactive | CV</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -41,12 +41,13 @@
 <body>
 
     <!-- Navigation -->
-    <a id="menu-toggle" href="#" class="btn btn-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav-sidebar></nav-sidebar>
+    <a id="menu-toggle" href="#" class="btn btn-lg toggle"><i class="fa fa-bars"></i></a>
     <nav id="sidebar-wrapper">
         <ul class="sidebar-nav">
             <a id="menu-close" href="#" class="btn btn-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
             <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>amactive.net</a>
+                <a href="#top" onclick=$("#menu-close").click();>amactive</a>
             </li>
             <li>
                 <a href="#top" onclick=$("#menu-close").click();>Home</a>
@@ -55,7 +56,7 @@
                 <a href="#about" onclick=$("#menu-close").click();>About</a>
             </li>
             <li>
-                <a href="#services" onclick=$("#menu-close").click();>Services</a>
+                <a href="#services" onclick=$("#menu-close").click();>Skills</a>
             </li>
             <li>
                 <a href="#portfolio" onclick=$("#menu-close").click();>Portfolio</a>
@@ -71,13 +72,22 @@
 
     <!-- Header -->
     <header id="top" class="header">
+        <div class="text-vertical-center">
+        <div class="main-img">
+            <a href="#about">
+                <img src="img/maga-cap.jpg">
+            </a>
+        </div>
+        </div>
+    </header>
+     <!--<header id="top" class="header">
         <div class="white-box">
             <p><strong>amactive.net</strong></p>
             <h1>Alex Mackenzie</h1>
             <p><strong>CV</strong></p>
             <p>I'm a UI-UX designer-developer with more than 10 years experience. My vast, diverse experience will be useful to any employer, so <a href="#contact">get in touch</a> if you have an empty chair, and a bad-ass-fast desktop machine to work from.</p>
         </div>
-    </header>
+    </header>-->
 
     <!-- About -->
     <section id="about" class="about">
@@ -99,7 +109,7 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2>My Skills</h2>
+                    <h2>Skills</h2>
                     <hr class="small">
                     <div class="row">
                         <div class="col-md-3 col-sm-6">
@@ -177,7 +187,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2>My Work</h2>
+                    <h2>Portfolio</h2>
                     <hr class="small">
                     
                     <div class="row" id="links">
@@ -189,7 +199,7 @@
                                 </li>
                                 <li>
                                     <a href="http://www.maltoncoachworks.co.uk" target="_blank" title="Open this website in new window">
-                                        <img class="top img-portfolio img-responsive" src="img/malton-coachworks.jpg" alt="Malton Coachworks"/>
+                                        <img class="top img-portfolio img-responsive" src="img/portfolio/malton-coachworks.jpg" alt="Malton Coachworks"/>
                                     </a>
                                 </li>
                             </ul>
@@ -202,7 +212,7 @@
                                 </li>
                                 <li>
                                     <a href="http://www.bestfoodprague.com" target="_blank" title="Open this website in new window">
-                                        <img class="top img-portfolio img-responsive" src="img/best-food-prague.jpg" alt="Best Food Prague"/>
+                                        <img class="top img-portfolio img-responsive" src="img/portfolio/best-food-prague.jpg" alt="Best Food Prague"/>
                                     </a>
                                 </li>
                             </ul>
@@ -215,7 +225,7 @@
                                 </li>
                                 <li>
                                     <a href="http://www.clarkandcarter.co.uk/" target="_blank" title="Open this website in new window">
-                                        <img class="top img-portfolio img-responsive" src="img/clark-and-carter-2.jpg" alt="Clark and Carter"/>
+                                        <img class="top img-portfolio img-responsive" src="img/portfolio/clark-and-carter.jpg" alt="Clark and Carter"/>
                                     </a>
                                 </li>
                             </ul>
@@ -228,7 +238,20 @@
                                 </li>
                                 <li>
                                     <a href="http://www.classicandsportscar.ltd.uk/" target="_blank" title="Open this website in new window">
-                                        <img class="top img-portfolio img-responsive" src="img/classic-and-sportscar.jpg" alt="Classic and Sportscar Centre"/>
+                                        <img class="top img-portfolio img-responsive" src="img/portfolio/classic-and-sportscar.jpg" alt="Classic and Sportscar Centre"/>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="demo-2 effect">
+                                <li class="li-text">
+                                    <h2 class="zero">PSautoart.com</h2>
+                                    <p class="zero">Lorem ipsum dolor sit amet.</p>
+                                </li>
+                                <li>
+                                    <a href="img/bg.jpg" target="_blank" title="Open this website in new window" data-gallery>
+                                        <img class="top img-portfolio img-responsive" src="img/portfolio/logo-paul-stephens-badge.jpg" alt="Zettabox"/>
                                     </a>
                                 </li>
                             </ul>
@@ -241,7 +264,7 @@
                                 </li>
                                 <li>
                                     <a href="img/bg.jpg" target="_blank" title="Open this website in new window" data-gallery>
-                                        <img class="top img-portfolio img-responsive" src="img/zettabox.jpg" alt="Zettabox"/>
+                                        <img class="top img-portfolio img-responsive" src="img/portfolio/logo-zettabox.jpg" alt="Zettabox"/>
                                     </a>
                                 </li>
                             </ul>
@@ -249,7 +272,7 @@
                     </div>
                     
                     <!-- /.row (nested) -->
-                    <a href="#" class="btn btn-dark">View More Items</a>
+                    <!--<a href="#" class="btn btn-dark">View More Items</a>-->
                 </div>
                 <!-- /.col-lg-10 -->
             </div>
@@ -258,26 +281,67 @@
         <!-- /.container -->
     </section>
 
+    
+
     <!-- Call to Action -->
     <aside id="clients" class="call-to-action bg-primary">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h3>The buttons below are impossible to resist.</h3>
-                    <a href="#" class="btn btn-lg btn-light">Click Me!</a>
-                    <a href="#" class="btn btn-lg btn-dark">Look at Me!</a>
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h2>Clients</h2>
+                    <hr class="small"> 
+                    <h3>Over the past 15 years, I have been very fortunate to work on some exciting projects for clients large and small all over the world</h3>
                 </div>
             </div>
         </div>
     </aside>
 
-    <!-- Map -->
-    <section class="map">
-        <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe>
-        <br />
-        <small>
-            <a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a>
-        </small>
+    <!-- Clients -->
+    <section id="clients" class="clients">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">                
+
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-bp.jpg" alt="Zettabox"/>
+                    </div> 
+
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-johnson-and-johnson.jpg" alt="Zettabox"/>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-depuy.jpg" alt="Zettabox"/>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-smith-and-nephew.jpg" alt="Zettabox"/>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-zoopla.jpg" alt="Zettabox"/>
+                    </div> 
+
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-credit-info.jpg" alt="Zettabox"/>
+                    </div> 
+                    
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-interoute.jpg" alt="Zettabox"/>
+                    </div>
+
+                    <div class="col-xs-6 col-sm-3 grid-logo">
+                        <img class="img-portfolio img-responsive" src="img/portfolio/logo-bonmarche.jpg" alt="Zettabox"/>
+                    </div> 
+                    
+                    <!-- /.row (nested) -->
+                    <!--<a href="#" class="btn btn-dark">View More Items</a>-->
+                </div>
+                <!-- /.col-lg-10 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.container -->
     </section>
 
     <!-- Footer -->
@@ -285,17 +349,15 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place
-                        <br>Beverly Hills, CA 90210</p>
+                    <h2>Contact</h2>
+                    <hr class="small">   
+                    <h4><strong>Alex Mackenzie</strong></h4>
                     <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:name@example.com">name@example.com</a>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:alex@amactive.net">alex@amactive.net</a>
                         </li>
                     </ul>
                     <br>
-                    <ul class="list-inline">
+                    <!--<ul class="list-inline">
                         <li>
                             <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
                         </li>
@@ -305,7 +367,7 @@
                         <li>
                             <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
                         </li>
-                    </ul>
+                    </ul>-->
                     <hr class="small">
                     <p class="text-muted">Copyright &copy; amactive 2017</p>
                 </div>
@@ -316,7 +378,7 @@
 
     <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
     <!--<div id="blueimp-gallery" class="blueimp-gallery">-->
-    <div ng-if="!$state.includes('home')" id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
+    <div id="blueimp-gallery" class="blueimp-gallery blueimp-gallery-controls" data-use-bootstrap-modal="false">
         <!-- The container for the modal slides -->
         <div class="slides"></div>
         <!-- Controls for the borderless lightbox -->
@@ -392,6 +454,7 @@
         if ($(this).scrollTop() > 250) {
             if (!fixed) {
                 fixed = true;
+                $('#menu-toggle').addClass('btn-dark');
                 // $('#to-top').css({position:'fixed', display:'block'});
                 $('#to-top').show("slow", function() {
                     $('#to-top').css({
@@ -403,6 +466,7 @@
         } else {
             if (fixed) {
                 fixed = false;
+                $('#menu-toggle').removeClass('btn-dark');
                 $('#to-top').hide("slow", function() {
                     $('#to-top').css({
                         display: 'none'
