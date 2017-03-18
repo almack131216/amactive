@@ -1,0 +1,49 @@
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+    display: none !important;
+}
+
+.display-none {display:none}
+.display-block {display:block;}
+.display-inline-block {display:inline-block}
+
+.bg-primary {
+    background-color:$primary-color;
+}
+.text-primary {
+    color:$primary-color;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    font-family: $base-font-family;
+}
+
+/* Custom Horizontal Rule */
+hr.small {
+    max-width: 100px;
+}
+
+/* clients logo grid */
+.grid-logo {
+    margin:-1px 0 0 -1px !important;
+    padding:0 !important;
+    border:1px solid #eee;
+}
+
+/* Callout */
+.callout {
+    display: table;
+    width: 100%;
+    height: 400px;
+    color: #fff;
+    background: url(../img/bg/pininfarina.jpg) no-repeat left top scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}

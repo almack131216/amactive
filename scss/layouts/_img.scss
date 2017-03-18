@@ -1,0 +1,62 @@
+/* img hover */
+
+.demo-2 {
+    position:relative;
+    width:100%;
+    height:auto;
+    overflow:hidden;
+    float:left;
+    background-color:#c0392b;
+    list-style:none;
+    margin-bottom:30px;
+}
+.demo-2:before {
+    content: "";
+    display: block;
+    padding-top: 65%;
+}
+.demo-2 li {
+    padding:0;
+    width:100%;
+    list-style:none;
+}
+.demo-2 li.li-text {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    padding:15px;
+}
+.demo-2 p,.demo-2 h2 {
+    color:#fff;
+    padding:10px;
+}
+.demo-2 p {
+    font-size:12px;
+    line-height:18px;
+    margin:0
+}
+.demo-2 h2 {
+    font-size:20px;
+    line-height:24px;
+    margin:0;
+}
+.effect img {
+    position:absolute;
+    left:0;
+    bottom:0;
+    cursor:pointer;
+    margin:-12px 0;
+    width:100%;
+    -webkit-transition:bottom .3s ease-in-out;
+    -moz-transition:bottom .3s ease-in-out;
+    -o-transition:bottom .3s ease-in-out;
+    transition:bottom .3s ease-in-out
+}
+.effect img.top:hover {
+    bottom:-96px;
+    padding-top:100px
+}
+h2.zero,p.zero {
+    margin:0;
+    padding:0
+}

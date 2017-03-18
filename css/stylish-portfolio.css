@@ -206,13 +206,17 @@ div.main-img img {
 }
 
 @media(max-width:600px) {
+
+    .text-vertical-center h1 {font-size:2.5em;}
+    .text-vertical-center h2 {font-size:20px;}
+    
     .header .white-box {
-    background:white;
-    max-width:90%;
-    margin:5% 0 0 5%;
-    padding:30px;
-    min-height:70%;
-}
+        background:white;
+        max-width:90%;
+        margin:5% 0 0 5%;
+        padding:30px;
+        min-height:70%;
+    }
 }
 
 /* About */
@@ -238,7 +242,7 @@ div.main-img img {
     width: 100%;
     height: 400px;
     color: #fff;
-    background: url(../img/bg/pininfarina.jpg) no-repeat center top scroll;
+    background: url(../img/bg/pininfarina.jpg) no-repeat left top scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -269,19 +273,9 @@ div.main-img img {
 }
 
 .clients .grid-logo {
-    margin:0 !important;
+    margin:-1px 0 0 -1px !important;
     padding:0 !important;
     border:1px solid #eee;
-}
-
-/* Call to Action */
-
-.call-to-action {
-    padding: 50px 0;
-}
-
-.call-to-action .btn {
-    margin: 10px;
 }
 
 /* Map */

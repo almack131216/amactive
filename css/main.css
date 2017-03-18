@@ -1,0 +1,1398 @@
+/*
+Skyapp Bootstrap Sass Theme
+Author: amactive 2017
+Version: 0.0.1
+*/
+/* BASE - base styles, variables, mixins etc */
+/* Font colors */
+/* Background colors */
+/* offset: margins & paddings */
+/* Mixins */
+/* line 1, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+
+/* line 5, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.display-none {
+  display: none;
+}
+
+/* line 6, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.display-block {
+  display: block;
+}
+
+/* line 7, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.display-inline-block {
+  display: inline-block;
+}
+
+/* line 9, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-primary {
+  background-color: #c0392b;
+}
+
+/* line 12, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.text-primary {
+  color: #c0392b;
+}
+
+/* line 16, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* line 22, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+body {
+  font-family: "Montserrat", Helvetica, Arial, sans-serif;
+}
+
+/* Custom Horizontal Rule */
+/* line 27, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+hr.small {
+  max-width: 100px;
+}
+
+/* clients logo grid */
+/* line 32, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.grid-logo {
+  margin: -1px 0 0 -1px !important;
+  padding: 0 !important;
+  border: 1px solid #eee;
+}
+
+/* Callout */
+/* line 39, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.callout {
+  display: table;
+  width: 100%;
+  height: 400px;
+  color: #fff;
+  background: url(../img/bg/pininfarina.jpg) no-repeat left top scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+/* MODULES - individual site components */
+/* Custom Button Styles */
+/* line 3, C:/xampp/htdocs/amactive/scss/modules/_buttons.scss */
+.btn-dark,
+#menu-toggle.btn-dark {
+  border-radius: 0;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* line 10, C:/xampp/htdocs/amactive/scss/modules/_buttons.scss */
+.btn-dark:hover,
+.btn-dark:focus,
+.btn-dark:active {
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+/* line 17, C:/xampp/htdocs/amactive/scss/modules/_buttons.scss */
+.btn-light {
+  border-radius: 0;
+  color: #333;
+  background-color: white;
+}
+
+/* line 23, C:/xampp/htdocs/amactive/scss/modules/_buttons.scss */
+.btn-light:hover,
+.btn-light:focus,
+.btn-light:active {
+  color: #333;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* sections */
+/* line 3, C:/xampp/htdocs/amactive/scss/modules/_sections.scss */
+.section-wrap {
+  padding: 50px 0;
+}
+
+/* line 7, C:/xampp/htdocs/amactive/scss/modules/_sections.scss */
+.text-vertical-center {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+/* line 12, C:/xampp/htdocs/amactive/scss/modules/_sections.scss */
+.text-vertical-center h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.5em;
+  font-weight: 700;
+}
+
+/* Skills / Services */
+/* line 21, C:/xampp/htdocs/amactive/scss/modules/_sections.scss */
+.service-item {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  /* line 26, C:/xampp/htdocs/amactive/scss/modules/_sections.scss */
+  .section-wrap {
+    padding: 30px 0;
+  }
+}
+
+/* carousel */
+/*
+image dimensions: 940x440 (original)
+height: 534 (min-width 1200)
+height: 440 (min-width 992)
+height: 337 (min-width 768)
+*/
+/* line 9, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-indicators li {
+  margin: 0 5px !important;
+}
+
+/* line 14, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-chevron, .carousel-fade .carousel-control span, .blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+  display: block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  color: #c0392b;
+  text-shadow: none;
+  line-height: 40px;
+  font-size: 20px;
+  border: 3px solid white;
+  /* Fallback for web browsers that don't support RGBa */
+  background-color: black;
+  /* RGBa with 0.6 opacity */
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  cursor: pointer;
+}
+
+/* line 31, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-inner .item {
+  transition-property: opacity;
+}
+
+/* line 34, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-inner .item img {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  border: none;
+}
+
+/* line 42, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-inner .item,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  opacity: 0;
+}
+
+/* line 48, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-inner .active,
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+/* line 54, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-inner .next,
+.carousel-fade .carousel-inner .prev,
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  transform: translate3d(0, 0, 0);
+}
+
+/* line 63, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+
+/* line 65, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-control span {
+  position: absolute;
+  top: 50%;
+  left: 0px;
+  margin: -25px 0 0 0;
+  filter: alpha(opacity=0);
+  opacity: 0.0;
+}
+
+/* line 74, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-control.left span {
+  border-left: 0px;
+}
+
+/* line 79, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-fade .carousel-control.right span {
+  left: auto;
+  right: 0px;
+  border-right: 0px;
+}
+
+/* line 88, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+}
+
+/* overrule bootstrap */
+/* line 95, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-control {
+  background: transparent !important;
+}
+
+/* line 98, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-control:focus, .carousel-control:hover {
+  text-decoration: none;
+  outline: 0;
+}
+
+/* line 102, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+.carousel-control:focus span, .carousel-control:hover span {
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+
+@media (min-width: 1200px) {
+  /* line 109, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+  .carousel {
+    min-height: 534px;
+  }
+}
+
+@media (min-width: 992px) {
+  /* line 112, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+  .carousel {
+    min-height: 440px;
+  }
+}
+
+@media (min-width: 768px) {
+  /* line 115, C:/xampp/htdocs/amactive/scss/modules/_carousel.scss */
+  .carousel {
+    min-height: 337px;
+  }
+}
+
+/*
+ * blueimp Gallery CSS
+ * https://github.com/blueimp/Gallery
+ *
+ * Copyright 2013, Sebastian Tschan
+ * https://blueimp.net
+ *
+ * Licensed under the MIT license:
+ * http://www.opensource.org/licenses/MIT
+ */
+/* line 12, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* Prevent artifacts in Mozilla Firefox: */
+  -moz-backface-visibility: hidden;
+}
+
+/* line 22, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides > .slide > .slide-content {
+  margin: auto;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+
+/* line 30, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery {
+  position: fixed;
+  z-index: 999999;
+  overflow: hidden;
+  background: #000;
+  background: rgba(0, 0, 0, 0.9);
+  filter: alpha(opacity=0);
+  opacity: 0.0;
+  display: none;
+  direction: ltr;
+  -ms-touch-action: none;
+  touch-action: none;
+}
+
+/* line 42, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery-carousel {
+  position: relative;
+  z-index: auto;
+  margin: 1em auto;
+  /* Set the carousel width/height ratio to 16/9: */
+  padding-bottom: 56.25%;
+  box-shadow: 0 0 10px #000;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+}
+
+/* line 52, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery-display {
+  display: block;
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+
+/* line 56, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+/* line 61, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery-carousel > .slides {
+  position: absolute;
+}
+
+/* line 64, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides > .slide {
+  position: relative;
+  float: left;
+  height: 100%;
+  text-align: center;
+  -webkit-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -moz-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -ms-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  -o-transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+/* line 75, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery,
+.blueimp-gallery > .slides > .slide > .slide-content {
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -ms-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+
+/* line 83, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides > .slide-loading {
+  background: url(../img/loading.gif) center no-repeat;
+  background-size: 64px 64px;
+}
+
+/* line 87, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides > .slide-loading > .slide-content {
+  opacity: 0;
+}
+
+/* line 90, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides > .slide-error {
+  background: url(../img/error.png) center no-repeat;
+}
+
+/* line 93, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides > .slide-error > .slide-content {
+  display: none;
+}
+
+/* line 97, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery {
+  /* playing */
+}
+
+/* line 99, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next {
+  padding: 0px !important;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+/* line 108, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .prev {
+  left: 0px;
+  border-left: 0px;
+}
+
+/* line 112, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .next {
+  left: auto;
+  right: 0px;
+  border-right: 0px;
+}
+
+/* line 117, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .title {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  margin: 0 40px 0 0;
+  font-size: 20px;
+  line-height: 30px;
+  text-shadow: 0 0 2px #000;
+  display: none;
+}
+
+/* line 127, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  display: none;
+  font-size: 30px;
+}
+
+/* line 134, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .play-pause {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  display: none;
+  font-size: 30px;
+}
+
+/* line 141, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .play-pause .fa-play {
+  display: block;
+}
+
+/* line 142, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .play-pause .fa-pause {
+  display: none;
+}
+
+/* line 145, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next,
+.blueimp-gallery > .close,
+.blueimp-gallery > .title,
+.blueimp-gallery > .play-pause {
+  padding: 20px;
+  cursor: pointer;
+  color: white;
+  text-decoration: none;
+  filter: alpha(opacity=50);
+  opacity: 0.5;
+}
+
+/* line 157, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .prev:hover,
+.blueimp-gallery > .next:hover,
+.blueimp-gallery > .close:hover,
+.blueimp-gallery > .title:hover,
+.blueimp-gallery > .play-pause:hover {
+  color: #fff;
+  filter: alpha(opacity=100);
+  opacity: 1.0;
+}
+
+/* line 168, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery.blueimp-gallery-playing > .play-pause .fa-play {
+  display: none;
+}
+
+/* line 169, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery.blueimp-gallery-playing > .play-pause .fa-pause {
+  display: block;
+}
+
+/* line 175, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery-controls > .prev,
+.blueimp-gallery-controls > .next,
+.blueimp-gallery-controls > .close,
+.blueimp-gallery-controls > .title,
+.blueimp-gallery-controls > .play-pause {
+  display: block;
+  /* Fix z-index issues (controls behind slide element) on Android: */
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+/* line 193, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery-single > .prev,
+.blueimp-gallery-left > .prev,
+.blueimp-gallery-single > .next,
+.blueimp-gallery-right > .next,
+.blueimp-gallery-single > .play-pause {
+  display: none;
+}
+
+/* line 200, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+.blueimp-gallery > .slides > .slide > .slide-content,
+.blueimp-gallery > .prev,
+.blueimp-gallery > .next,
+.blueimp-gallery > .close,
+.blueimp-gallery > .play-pause {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* IE7 fixes */
+/* line 215, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+* + html .blueimp-gallery > .slides > .slide {
+  min-height: 300px;
+}
+
+/* line 218, C:/xampp/htdocs/amactive/scss/modules/_blueimp-gallery.scss */
+* + html .blueimp-gallery > .slides > .slide > .slide-content {
+  position: relative;
+}
+
+/* LAYOUTS - page layout styles */
+/* Side Menu */
+/* line 2, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+#menu-toggle {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: white;
+  color: black;
+  border-radius: 0;
+  -webkit-transition: all 500ms linear;
+  -moz-transition: all 500ms linear;
+  -o-transition: all 500ms linear;
+  -ms-transition: all 500ms linear;
+  transition: all 500ms linear;
+}
+
+/* line 18, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+#sidebar-wrapper {
+  z-index: 1000;
+  position: fixed;
+  right: 0;
+  width: 250px;
+  height: 100%;
+  transform: translateX(250px);
+  overflow-y: auto;
+  background: #222;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 34, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* line 43, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav li {
+  text-indent: 20px;
+  line-height: 40px;
+}
+
+/* line 48, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav li a {
+  display: block;
+  text-decoration: none;
+  color: #999;
+}
+
+/* line 54, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav li a:hover {
+  text-decoration: none;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* line 60, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav li a:active,
+.sidebar-nav li a:focus {
+  text-decoration: none;
+}
+
+/* line 65, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav > .sidebar-brand {
+  height: 55px;
+  font-size: 22px;
+  line-height: 55px;
+}
+
+/* line 71, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav > .sidebar-brand a {
+  color: #fff;
+}
+
+/* line 75, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.sidebar-nav > .sidebar-brand a:hover {
+  color: #fff;
+  background: none;
+}
+
+/* line 80, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+#sidebar-wrapper.active {
+  right: 250px;
+  width: 250px;
+  -webkit-transition: all 0.4s ease 0s;
+  -moz-transition: all 0.4s ease 0s;
+  -ms-transition: all 0.4s ease 0s;
+  -o-transition: all 0.4s ease 0s;
+  transition: all 0.4s ease 0s;
+}
+
+/* line 90, C:/xampp/htdocs/amactive/scss/layouts/_nav-sidebar.scss */
+.toggle {
+  margin: 5px 5px 0 0;
+}
+
+/* Header */
+/* line 4, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+.header {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: white;
+  /*background: url(../img/bg/napoli-dome-roof.jpg) no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;*/
+}
+
+/* line 17, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+.white-box {
+  background: white;
+  max-width: 400px;
+  margin: 50px 0 0 50px;
+  padding: 30px;
+  min-height: 70%;
+}
+
+/* line 24, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+.white-box h1 {
+  color: black;
+  margin-bottom: 20px;
+}
+
+/* line 25, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+.white-box p {
+  color: black;
+}
+
+/* line 30, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+div.main-img {
+  display: inline-block;
+  background: white;
+  width: 90%;
+  max-width: 600px;
+  height: auto;
+}
+
+/* line 37, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+div.main-img img {
+  width: 100%;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  /* line 47, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+  .text-vertical-center h1 {
+    font-size: 2.5em;
+  }
+  /* line 48, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+  .text-vertical-center h2 {
+    font-size: 20px;
+  }
+  /* line 52, C:/xampp/htdocs/amactive/scss/layouts/_header.scss */
+  .header .white-box {
+    background: white;
+    max-width: 90%;
+    margin: 5% 0 0 5%;
+    padding: 30px;
+    min-height: 70%;
+  }
+}
+
+/* line 1, C:/xampp/htdocs/amactive/scss/layouts/_footer.scss */
+footer {
+  padding: 100px 0;
+}
+
+/* line 5, C:/xampp/htdocs/amactive/scss/layouts/_footer.scss */
+#to-top {
+  display: none;
+  position: fixed;
+  bottom: 5px;
+  right: 5px;
+}
+
+@media (max-width: 768px) {
+  /* line 13, C:/xampp/htdocs/amactive/scss/layouts/_footer.scss */
+  footer {
+    padding: 30px 0;
+  }
+}
+
+/* img hover */
+/* line 3, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.demo-2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  float: left;
+  background-color: #c0392b;
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+/* line 13, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.demo-2:before {
+  content: "";
+  display: block;
+  padding-top: 65%;
+}
+
+/* line 18, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.demo-2 li {
+  padding: 0;
+  width: 100%;
+  list-style: none;
+}
+
+/* line 23, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.demo-2 li.li-text {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  padding: 15px;
+}
+
+/* line 29, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.demo-2 p, .demo-2 h2 {
+  color: #fff;
+  padding: 10px;
+}
+
+/* line 33, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.demo-2 p {
+  font-size: 12px;
+  line-height: 18px;
+  margin: 0;
+}
+
+/* line 38, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.demo-2 h2 {
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0;
+}
+
+/* line 43, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.effect img {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  cursor: pointer;
+  margin: -12px 0;
+  width: 100%;
+  -webkit-transition: bottom .3s ease-in-out;
+  -moz-transition: bottom .3s ease-in-out;
+  -o-transition: bottom .3s ease-in-out;
+  transition: bottom .3s ease-in-out;
+}
+
+/* line 55, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+.effect img.top:hover {
+  bottom: -96px;
+  padding-top: 100px;
+}
+
+/* line 59, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+h2.zero, p.zero {
+  margin: 0;
+  padding: 0;
+}
+
+/* Offsets */
+/* line 2, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-0 {
+  margin: 0 !important;
+}
+
+/* line 3, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-x-0 {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* line 4, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-0 {
+  padding: 0 !important;
+}
+
+/* line 5, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-y-0 {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
+/* line 6, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-y-g2 {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
+}
+
+/* line 7, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-top-0 {
+  padding-top: 0 !important;
+}
+
+/* line 8, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-bottom-0 {
+  padding-bottom: 0 !important;
+}
+
+/* line 9, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-bottom-g2 {
+  padding-bottom: 30px !important;
+}
+
+/* line 10, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-x-0 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* line 11, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-left-0 {
+  padding-left: 0 !important;
+}
+
+/* line 12, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.padding-right-0 {
+  padding-right: 0 !important;
+}
+
+/* line 14, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-top-1 {
+  margin-top: 10px;
+}
+
+/* line 15, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-top-2 {
+  margin-top: 20px;
+}
+
+/* line 16, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-top-g2 {
+  margin-top: 30px;
+}
+
+/* line 17, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-bottom-g2 {
+  margin-bottom: 30px;
+}
+
+/* line 19, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-left-1 {
+  margin-left: 10px;
+}
+
+/* line 22, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-right-1 {
+  margin-right: 10px;
+}
+
+/* line 26, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.margin-bottom-2 {
+  margin-bottom: 20px;
+}
+
+/* line 30, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.border-0 {
+  border: 0px !important;
+}
+
+/* line 31, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.border-top-0 {
+  border-top: 0px !important;
+}
+
+/* line 32, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.border-bottom-0 {
+  border-bottom: 0px !important;
+}
+
+/* line 33, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.border-left-0 {
+  border-left: 0px !important;
+}
+
+/* line 34, C:/xampp/htdocs/amactive/scss/layouts/_offsets.scss */
+.border-right-0 {
+  border-right: 0px !important;
+}
+
+/* xxs and xxxs */
+/* amAdded */
+/* line 5, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+.row-no-padding [class*="col-"] {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  /* line 12, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-1, .col-xxs-10, .col-xxs-11, .col-xxs-12, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  /* line 19, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-1, .col-xxs-10, .col-xxs-11, .col-xxs-12, .col-xxs-2, .col-xxs-3, .col-xxs-4, .col-xxs-5, .col-xxs-6, .col-xxs-7, .col-xxs-8, .col-xxs-9 {
+    float: left;
+  }
+}
+
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* line 25, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-1, .col-xxxs-10, .col-xxxs-11, .col-xxxs-12, .col-xxxs-2, .col-xxxs-3, .col-xxxs-4, .col-xxxs-5, .col-xxxs-6, .col-xxxs-7, .col-xxxs-8, .col-xxxs-9 {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  /* line 32, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-1, .col-xxxs-10, .col-xxxs-11, .col-xxxs-12, .col-xxxs-2, .col-xxxs-3, .col-xxxs-4, .col-xxxs-5, .col-xxxs-6, .col-xxxs-7, .col-xxxs-8, .col-xxxs-9 {
+    float: left;
+  }
+}
+
+/* 481 - 640 */
+/* line 38, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+.visible-xxs {
+  display: none !important;
+}
+
+@media screen and (min-width: 481px) and (max-width: 640px) {
+  /* line 40, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .hidden-xxs {
+    display: none !important;
+  }
+  /* line 41, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .visible-xxs {
+    display: block !important;
+  }
+  /* line 43, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-1 {
+    width: 8.33333333%;
+  }
+  /* line 44, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-2 {
+    width: 16.66666667%;
+  }
+  /* line 45, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-3 {
+    width: 25%;
+  }
+  /* line 46, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-4 {
+    width: 33.33333333%;
+  }
+  /* line 47, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-5 {
+    width: 41.66666667%;
+  }
+  /* line 48, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-6 {
+    width: 50%;
+  }
+  /* line 49, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-7 {
+    width: 58.33333333%;
+  }
+  /* line 50, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-8 {
+    width: 66.66666667%;
+  }
+  /* line 51, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-9 {
+    width: 75%;
+  }
+  /* line 52, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-10 {
+    width: 83.33333333%;
+  }
+  /* line 53, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-11 {
+    width: 91.66666667%;
+  }
+  /* line 54, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxs-12 {
+    width: 100%;
+  }
+}
+
+/* 321 - 480 */
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* line 59, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .hidden-xxxs {
+    display: none !important;
+  }
+  /* line 60, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .visible-xxxs {
+    display: block !important;
+  }
+  /* line 62, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-1 {
+    width: 8.33333333%;
+  }
+  /* line 63, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-2 {
+    width: 16.66666667%;
+  }
+  /* line 64, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-3 {
+    width: 25%;
+  }
+  /* line 65, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-4 {
+    width: 33.33333333%;
+  }
+  /* line 66, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-5 {
+    width: 41.66666667%;
+  }
+  /* line 67, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-6 {
+    width: 50%;
+  }
+  /* line 68, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-7 {
+    width: 58.33333333%;
+  }
+  /* line 69, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-8 {
+    width: 66.66666667%;
+  }
+  /* line 70, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-9 {
+    width: 75%;
+  }
+  /* line 71, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-10 {
+    width: 83.33333333%;
+  }
+  /* line 72, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-11 {
+    width: 91.66666667%;
+  }
+  /* line 73, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-12 {
+    width: 100%;
+  }
+  /* amAdded */
+  /* line 76, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-text-align-left {
+    text-align: left;
+  }
+  /* line 77, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-text-align-right {
+    text-align: left;
+  }
+  /* line 78, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-left-0 {
+    padding-left: 0;
+  }
+  /* line 79, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-left-1 {
+    padding-left: 10px !important;
+  }
+  /* line 80, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-right-0 {
+    padding-right: 0;
+  }
+  /* line 81, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-top-2 {
+    padding-top: 20px !important;
+  }
+}
+
+/* 241 - 320 */
+@media screen and (min-width: 241px) and (max-width: 320px) {
+  /* line 86, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .hidden-xxxs {
+    display: none !important;
+  }
+  /* line 87, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .visible-xxxs {
+    display: block !important;
+  }
+  /* line 89, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-1 {
+    width: 8.33333333%;
+  }
+  /* line 90, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-2 {
+    width: 16.66666667%;
+  }
+  /* line 91, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-3 {
+    width: 25%;
+  }
+  /* line 92, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-4 {
+    width: 33.33333333%;
+  }
+  /* line 93, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-5 {
+    width: 41.66666667%;
+  }
+  /* line 94, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-6 {
+    width: 50%;
+  }
+  /* line 95, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-7 {
+    width: 58.33333333%;
+  }
+  /* line 96, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-8 {
+    width: 66.66666667%;
+  }
+  /* line 97, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-9 {
+    width: 75%;
+  }
+  /* line 98, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-10 {
+    width: 83.33333333%;
+  }
+  /* line 99, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-11 {
+    width: 91.66666667%;
+  }
+  /* line 100, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-12 {
+    width: 100%;
+  }
+  /* amAdded */
+  /* line 103, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-text-align-left {
+    text-align: left;
+  }
+  /* line 104, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-text-align-right {
+    text-align: left;
+  }
+  /* line 105, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-left-0 {
+    padding-left: 0;
+  }
+  /* line 106, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-left-1 {
+    padding-left: 10px !important;
+  }
+  /* line 107, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-right-0 {
+    padding-right: 0;
+  }
+  /* line 108, C:/xampp/htdocs/amactive/scss/layouts/_xxxs-lite.scss */
+  .col-xxxs-padding-top-2 {
+    padding-top: 20px !important;
+  }
+}
+
+/* _mobile.scss */
+/* line 2, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+.visible-sm-down {
+  display: none !important;
+}
+
+/* line 3, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+.visible-xs-down {
+  display: none !important;
+}
+
+/* line 4, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+.hidden-xs-down {
+  display: block !important;
+}
+
+/* lg */
+/* md */
+/* sm */
+/* xs */
+/* CUSTOM styles based on widths (catch unspecific sizes) */
+/* md */
+@media all and (max-width: 1199px) {
+  /* line 21, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_md_hide {
+    display: none;
+  }
+  /* line 22, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_md_width-full {
+    width: 100%;
+  }
+}
+
+/* sm */
+@media all and (max-width: 991px) {
+  /* line 29, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_sm_hide {
+    display: none;
+  }
+  /* line 30, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_sm_width-full {
+    width: 100%;
+  }
+  /* line 31, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .visible-sm-down {
+    display: block !important;
+  }
+}
+
+/* xs */
+@media all and (max-width: 767px) {
+  /* line 35, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  h1, .h1 {
+    font-size: 30px;
+  }
+  /* line 36, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .visible-xs-down {
+    display: block !important;
+  }
+  /* line 37, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .hidden-xs-down {
+    display: none !important;
+  }
+  /* line 39, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xs_hide {
+    display: none;
+  }
+  /* line 40, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xs_width-full {
+    width: 100%;
+  }
+}
+
+/* xxs */
+@media all and (max-width: 640px) {
+  /* line 44, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .hidden-xxs-down {
+    display: none;
+  }
+  /* line 45, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_hide {
+    display: none;
+  }
+  /* line 46, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_width-full {
+    width: 100%;
+  }
+  /* line 48, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_col-4 {
+    width: 33.33333333%;
+  }
+  /* line 49, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_col-8 {
+    width: 66.66666667%;
+  }
+  /* line 50, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_col-12 {
+    width: 100%;
+  }
+}
+
+/* xxxs */
+@media all and (min-width: 320px) and (max-width: 480px) {
+  /* line 56, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  h1, .h1 {
+    font-size: 26px;
+  }
+  /* line 57, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  h3 {
+    font-size: 20px;
+  }
+  /* line 58, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  h4 {
+    font-size: 16px;
+  }
+  /* line 60, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_hide {
+    display: none;
+  }
+  /* line 61, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_width-full {
+    width: 100%;
+  }
+  /* line 63, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_col-4 {
+    width: 33.33333333%;
+  }
+  /* line 64, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_col-8 {
+    width: 66.66666667%;
+  }
+  /* line 65, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .rwd_xxs_col-12 {
+    width: 100%;
+  }
+  /* line 67, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  section.section-main {
+    padding-top: 15px;
+  }
+  /* line 71, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .txt-body-pad {
+    padding: 15px 0;
+    text-align: left;
+  }
+  /* line 76, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .pictureWrap .txt-body-pad {
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: left;
+  }
+  /* line 82, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .block {
+    margin-bottom: 15px;
+  }
+  /* line 85, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .block.img-block {
+    padding: 0px;
+  }
+  /* line 90, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .footer-main {
+    padding-top: 0px;
+  }
+  /* line 92, C:/xampp/htdocs/amactive/scss/layouts/_mobile.scss */
+  .footer-main ul {
+    margin-bottom: 0px;
+  }
+}
+
+/*# sourceMappingURL=../css/main.map */
