@@ -52,11 +52,15 @@
     -o-transition:bottom .3s ease-in-out;
     transition:bottom .3s ease-in-out
 }
-.effect img.top:hover {
-    bottom:-96px;
-    padding-top:100px
-}
+
 h2.zero,p.zero {
     margin:0;
     padding:0
+}
+
+@media(min-width:600px) {
+    .effect img.top:hover {
+        bottom:-96px;
+        padding-top:100px
+    }
 }

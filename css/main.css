@@ -824,16 +824,18 @@ footer {
   transition: bottom .3s ease-in-out;
 }
 
-/* line 55, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
-.effect img.top:hover {
-  bottom: -96px;
-  padding-top: 100px;
-}
-
-/* line 59, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+/* line 56, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
 h2.zero, p.zero {
   margin: 0;
   padding: 0;
+}
+
+@media (min-width: 600px) {
+  /* line 62, C:/xampp/htdocs/amactive/scss/layouts/_img.scss */
+  .effect img.top:hover {
+    bottom: -96px;
+    padding-top: 100px;
+  }
 }
 
 /* Offsets */
