@@ -93,7 +93,7 @@ hr.small {
 .btn-dark:focus,
 .btn-dark:active {
   color: #fff;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* line 17, C:/xampp/htdocs/amactive/scss/modules/_buttons.scss */

@@ -255,7 +255,7 @@ div.main-img img {
     padding: 50px 0;
 }
 
-/*.portfolio-item {
+.portfolio-item {
     margin-bottom: 30px;
 }
 
@@ -265,7 +265,7 @@ div.main-img img {
 
 .img-portfolio:hover {
     opacity: 0.8;
-}*/
+}
 
 /* Clients */
 .clients {
