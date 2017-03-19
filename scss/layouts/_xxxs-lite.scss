@@ -8,6 +8,14 @@
   }
 }
 
+/* 0 < 640 */
+@media screen and (max-width: 640px){
+    .hidden-xxs-down {display: none!important;}
+    .visible-xxs-down {display: block!important;}
+
+    .col-xxs-12-down { width: 100%; }
+}
+
 @media screen and (min-width:481px) and (max-width: 640px){
     .col-xxs-1,.col-xxs-10,.col-xxs-11,.col-xxs-12,.col-xxs-2,.col-xxs-3,.col-xxs-4,.col-xxs-5,.col-xxs-6,.col-xxs-7,.col-xxs-8,.col-xxs-9 {
       position:relative;
