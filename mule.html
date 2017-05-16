@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Alex Mack, UI-UX designer-developer CV / Portfolio site">
+    <meta name="author" content="amactive (c) 2017">
+
+    <title>AMACTIVE</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,800,800i" rel="stylesheet">
+
+    <style>      
+    /* hide blueimp-gallery to avoid naked buttons showing during load */
+    /* blueimp-gallery-display - this class is added when gallry is required - now we can see it */
+    /* blueimp-gallery-controls - this class is added to show overlays on gallery */
+    .blueimp-gallery{display: none;}     
+    </style>
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <style>
+
+        .undercover {
+            position: absolute;
+            z-index: 0;
+            background: red;
+        }
+
+        .mh-wrap {
+            position:relative;
+            background:yellow;
+            display:block;
+            margin:0 auto;
+            text-align:right;
+            font-size:40px;
+            font-weight:bold;
+            width:100%;
+            max-width:600px;
+        }
+        .mh-a {
+            /*background:black;*/
+            position:absolute;
+            z-index:1;
+            color:white;
+            text-align:left;
+            display:block;
+            width:calc(100% - 30px);
+            padding:5px 15px;     
+        }
+        .mh-a span.text {            
+            white-space: normal;
+            /*display:inline-block;
+            /*background:blue;*/
+            
+        }        
+        .undercover.b {
+            position: absolute;
+            z-index: 0;
+            left:auto;
+            right:0px;
+            background: blue;
+        }
+        .mh-a.b {
+            /*background:orange;*/
+            color:white;
+            text-align:right;
+            width:100%;           
+        }  
+        
+    </style>
+
+</head>
+
+<body onload="updateContainer();">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12" style="text-align:center;background:pink;">
+                
+                <div class="mh-wrap" id="mh-1-wrap">
+                    <div class="undercover" id="mh-1-undercover"></div>
+                    <div class="mh-a">
+                        <!--<span class="diff"></span>-->
+                        <!--<span class="text">-->
+                            <span id="mh-1-text">Merketing Header goes in here goes in here goes in here</span>
+                        <!--</span>-->
+                        <!--<span class="diff2"></span>-->
+                    </div>                    
+                </div>
+                <div class="mh-wrap b" id="mh-2-wrap">
+                    <div class="undercover b" id="mh-2-undercover"></div>
+                    <div class="mh-a b">
+                        <!--<span class="diff"></span>-->
+                        <!--<span class="text b">-->
+                            <span id="mh-2-text">Merketing Header2</span>
+                        <!--</span>-->
+                        <!--<span class="diff2"></span>-->
+                    </div>                    
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <script>
+
+        function updateContainer() {
+            var $containerHeight = $(window).width();
+
+            var lineHeightOffset = -10;
+            var boxPadding = 15;
+            var textBox = $('#mh-1-text');
+            $('#mh-1-wrap').css({
+                height: textBox.height() + (boxPadding*2) + lineHeightOffset
+            });
+            
+            $('#mh-1-undercover').css({
+                width: textBox.width() + (boxPadding*2),
+                height: textBox.height() + (boxPadding*2) + lineHeightOffset
+            });
+
+            var textBox2 = $('#mh-2-text');
+            $('#mh-2-wrap').css({
+                height: textBox2.height() + (boxPadding*2) + lineHeightOffset
+            });
+            
+            $('#mh-2-undercover').css({
+                width: textBox2.width() + (boxPadding*2),
+                height: textBox2.height() + (boxPadding*2) + lineHeightOffset
+            });
+
+        }
+
+        $(document).ready(function () {
+            updateContainer();
+            $(window).resize(function() {
+                updateContainer();
+            });
+        });
+        
+    </script>
+
+</body>
+
+</html>
