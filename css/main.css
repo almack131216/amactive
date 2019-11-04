@@ -1,6 +1,6 @@
 /*
 Skyapp Bootstrap Sass Theme
-Author: amactive 2017
+Author: amactive 2019
 Version: 0.0.1
 */
 /* BASE - base styles, variables, mixins etc */
@@ -34,30 +34,84 @@ Version: 0.0.1
 }
 
 /* line 12, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-secondary {
+  background-color: #ffaf00;
+}
+
+/* line 15, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-third {
+  background-color: #0091cf;
+}
+
+/* line 18, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-fourth {
+  background-color: #01395a;
+}
+
+/* line 21, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-fourth p,
+.bg-fourth h2, .bg-fourth h4,
+.bg-fourth ul li,
+.bg-fourth ul li {
+  color: white;
+}
+
+/* line 28, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-fourth a {
+  color: white;
+}
+
+/* line 32, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-white {
+  background-color: white;
+}
+
+/* line 38, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-secondary p,
+.bg-secondary ul li,
+.bg-secondary ul li,
+.bg-third p,
+.bg-third ul li,
+.bg-third ul li {
+  color: black;
+}
+
+/* line 44, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-secondary a,
+.bg-third a {
+  color: white;
+}
+
+/* line 48, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+.bg-third {
+  background-color: #0091cf;
+}
+
+/* line 52, C:/xampp/htdocs/amactive/scss/base/_base.scss */
 .text-primary {
   color: #c0392b;
 }
 
-/* line 16, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+/* line 56, C:/xampp/htdocs/amactive/scss/base/_base.scss */
 html,
 body {
   width: 100%;
   height: 100%;
 }
 
-/* line 22, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+/* line 62, C:/xampp/htdocs/amactive/scss/base/_base.scss */
 body {
   font-family: "Montserrat", Helvetica, Arial, sans-serif;
 }
 
 /* Custom Horizontal Rule */
-/* line 27, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+/* line 67, C:/xampp/htdocs/amactive/scss/base/_base.scss */
 hr.small {
   max-width: 100px;
 }
 
 /* clients logo grid */
-/* line 32, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+/* line 72, C:/xampp/htdocs/amactive/scss/base/_base.scss */
 .grid-logo {
   margin: -1px 0 0 -1px !important;
   padding: 0 !important;
@@ -65,7 +119,7 @@ hr.small {
 }
 
 /* Callout */
-/* line 39, C:/xampp/htdocs/amactive/scss/base/_base.scss */
+/* line 79, C:/xampp/htdocs/amactive/scss/base/_base.scss */
 .callout {
   display: table;
   width: 100%;
@@ -138,8 +192,15 @@ hr.small {
   margin-bottom: 30px;
 }
 
-@media (max-width: 768px) {
+@media (min-width: 481px) and (max-width: 991px) {
   /* line 26, C:/xampp/htdocs/amactive/scss/modules/_sections.scss */
+  .service-item p {
+    height: 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* line 32, C:/xampp/htdocs/amactive/scss/modules/_sections.scss */
   .section-wrap {
     padding: 30px 0;
   }
@@ -583,7 +644,7 @@ height: 337 (min-width 768)
 #sidebar-wrapper {
   z-index: 1000;
   position: fixed;
-  right: 0;
+  right: -250px;
   width: 250px;
   height: 100%;
   transform: translateX(250px);
@@ -763,7 +824,7 @@ footer {
   height: auto;
   overflow: hidden;
   float: left;
-  background-color: #c0392b;
+  background-color: #0091cf;
   list-style: none;
   margin-bottom: 30px;
 }

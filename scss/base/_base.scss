@@ -9,6 +9,46 @@
 .bg-primary {
     background-color:$primary-color;
 }
+.bg-secondary {
+    background-color:$secondary-color;
+}
+.bg-third {
+    background-color:$third-color;
+}
+.bg-fourth {
+    background-color:$fourth-color;
+
+    p,
+    h2,h4,
+    ul li,
+    ul li {
+        color:white;
+    }
+
+    a {
+        color:white;
+    }
+}
+.bg-white {
+    background-color:white;
+}
+
+.bg-secondary,
+.bg-third {
+    p,
+    ul li,
+    ul li {
+        color:black;
+    }
+
+    a {
+        color:white;
+    }
+}
+.bg-third {
+    background-color:$third-color;
+}
+
 .text-primary {
     color:$primary-color;
 }
